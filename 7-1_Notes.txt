@@ -1,0 +1,141 @@
+Intro to CyberSec
+====================================================================================================================================
+
+////////////////////////////////////////////// OFFENSIVE SECURITY ALREADY COMPLETED \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+====================================================================================================================================
+	Intro to Offensive Security
+		WebApp Security
+			• The lab here was a simple IDOR vuln, I swapped the ?id query to swap user accounts
+		OS Security
+			• This lab was just SSH'ing into a system after a user failed their clean-desk policy and had creds on a stickynote
+				○ I still did an nmap scan cause why not, the only open port was 22
+			• On the system I did 'ls -la' to look at the user's home directory, then 'sudo -l' to see if I have any sudoable commands (no)
+			• I find another user named Johnny, I honestly try the first pass that comes to mind, abc123, and it's right.
+			• From here I find Johnny accidentally typed the root password into bash and it's in the history, I su root and get the flag
+		Network Security
+			• As always, an nmap scan!
+				○ 21/tcp, 22/tcp and 80/tcp
+			• This revealed a website so I used gobuster which gave me no results
+				○ I also inspected element just to be sure there was no info in the html
+			• With no hits here I decided to inspect the open FTP port using ftp-anon on nmap which showed anonymous login is enabled
+				○ nmap -vv -p 21 --script=ftp-anon <ip>
+			• Logging in via FTP I find a password file that is for root
+			• Now SSH'ing in as root I find both flags
+
+====================================================================================================================================
+
+	Intro to Defensive Security
+		Intro to Digital Forensics
+			• Here we were told to download a ransom zip file and do some metadata research on it
+			• It's difficult to get the files on the attackbox and my VMs are acting up right now, so I just used FTK on my main machine
+		Security Operations
+			• Just a firewall module to create rules and drop packets from an attacker
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--
+
+
+====================================================================================================================================
+
+//////////////////////////////////////////// PLACEHOLDERRRRRRRRRRRRRRRRRRRRRRRRRRRRRR \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+====================================================================================================================================
+	
+
+		Task 1 - 
+			• 
+		Task 2 - 
+			• 
+		Task 3 - 
+			• 
+		Task 4 - 
+			• 
+		Task 5 - 
+			• 
+		Task 6 - 
+			• 
+		Task 7 - 
+			• 
+		Task 8 - 
+			• 
+		Task 9 - 
+			• 
+		Task 10 - 
+			• 
+		Task 11 - 
+			• 
+		Task 12 - 
+			• 
+		Task 13 - 
+			• 
+		Task 14 - 
+			• 
+		Task 15 - 
+			• 
+		Task 16 - 
+			• 
+		Task 17 - 
+			• 
+		Task 18 - 
+			• 
+		Task 19 - 
+			• 
+		Task 20 - 
+			• 
+		Task 21 - 
+			• 
+		Task 22 - 
+			• 
+		Task 23 - 
+			• 
